@@ -27,17 +27,21 @@
           "direction": "output",
           "bits": [ "0", "0", "0", "0", "0", "0", "0", "0" ]
         },
-        "clk": {
+        "ena": {
           "direction": "input",
           "bits": [ 26 ]
         },
-        "rst_n": {
+        "clk": {
           "direction": "input",
           "bits": [ 27 ]
+        },
+        "rst_n": {
+          "direction": "input",
+          "bits": [ 28 ]
         }
       },
       "cells": {
-        "$add$src/project.v:24$3": {
+        "$add$src/project.v:25$3": {
           "hide_name": 1,
           "type": "$add",
           "parameters": {
@@ -48,7 +52,7 @@
             "Y_WIDTH": 8
           },
           "attributes": {
-            "src": "src/project.v:24"
+            "src": "src/project.v:25"
           },
           "port_directions": {
             "A": "input",
@@ -58,7 +62,7 @@
           "connections": {
             "A": [ 2, 3, 4, 5, 6, 7, 8, 9 ],
             "B": [ 18, 19, 20, 21, 22, 23, 24, 25 ],
-            "Y": [ 28, 29, 30, 31, 32, 33, 34, 35 ]
+            "Y": [ 29, 30, 31, 32, 33, 34, 35, 36 ]
           }
         },
         "$procdff$4": {
@@ -71,7 +75,7 @@
             "WIDTH": 8
           },
           "attributes": {
-            "src": "src/project.v:20"
+            "src": "src/project.v:21"
           },
           "port_directions": {
             "ARST": "input",
@@ -80,9 +84,9 @@
             "Q": "output"
           },
           "connections": {
-            "ARST": [ 27 ],
-            "CLK": [ 26 ],
-            "D": [ 28, 29, 30, 31, 32, 33, 34, 35 ],
+            "ARST": [ 28 ],
+            "CLK": [ 27 ],
+            "D": [ 29, 30, 31, 32, 33, 34, 35, 36 ],
             "Q": [ 10, 11, 12, 13, 14, 15, 16, 17 ]
           }
         }
@@ -90,12 +94,19 @@
       "netnames": {
         "$0\\result[7:0]": {
           "hide_name": 1,
-          "bits": [ 28, 29, 30, 31, 32, 33, 34, 35 ],
+          "bits": [ 29, 30, 31, 32, 33, 34, 35, 36 ],
           "attributes": {
-            "src": "src/project.v:20"
+            "src": "src/project.v:21"
           }
         },
         "clk": {
+          "hide_name": 0,
+          "bits": [ 27 ],
+          "attributes": {
+            "src": "src/project.v:10"
+          }
+        },
+        "ena": {
           "hide_name": 0,
           "bits": [ 26 ],
           "attributes": {
@@ -106,14 +117,14 @@
           "hide_name": 0,
           "bits": [ 10, 11, 12, 13, 14, 15, 16, 17 ],
           "attributes": {
-            "src": "src/project.v:18"
+            "src": "src/project.v:19"
           }
         },
         "rst_n": {
           "hide_name": 0,
-          "bits": [ 27 ],
+          "bits": [ 28 ],
           "attributes": {
-            "src": "src/project.v:10"
+            "src": "src/project.v:11"
           }
         },
         "ui_in": {

@@ -1,7 +1,7 @@
 <!---
 
 This file is used to generate your project datasheet. Please fill in the information below and delete any unused
-sections.
+sections. blablabla
 
 You can also include images in this folder and reference them in the markdown. Each image must be less than
 512 kb in size, and the combined size of all images must be less than 1 MB.
@@ -40,4 +40,7 @@ Two rows of 8 DIP switches or jumpers to drive the ui_in and uio_in inputs.
 A row of 8 LEDs connected to uo_out to visualize the result of the addition.
 
 A push button or signal generator to manually drive the clock (clk) and reset (rst_n) signals.
+
+
+
 
